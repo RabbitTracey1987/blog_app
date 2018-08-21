@@ -18,10 +18,11 @@
 			</div>
 		</div> 
 	<% end %>
-		<%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f|%>el
+		<%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f|%>
 		  <div class="form-group">
 		  	<div class="control-label col-md-1">
 		  		<%= f.label :title %>
+		  	</div>	
 		  		<div class="col-md-11">
 		  			<%= f.text_field :title, class: 'form-control', placeholder: "Title of article", autofocus: true %>
 		  		</div>
