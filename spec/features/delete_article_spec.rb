@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.feature "Deleting an article" do
 	before do
 		@article=Article.create(title:"title one",body: "body of article one")
+		
 	end
 
 	scenario 'A user deletes an article' do 
