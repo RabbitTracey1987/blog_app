@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
   end
   def show
     @comment=@article.comments.build
+    @comments=@article.comments
   end
   def create
   	@article =Article.new(article_params)
